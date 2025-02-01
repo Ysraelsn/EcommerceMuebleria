@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="hhts://fonts.gstatic.com" crossorigin />
+        <link
+            href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@700&family=Raleway:wght@400;700;900&display=swap"
+            rel="stylesheet" />
+        <link rel="stylesheet" href="/css/styles.css" />
+        <title>Ecommerce - Contacto</title>
+    </head>
+
+    <body>
+        <header>
+            <h1 class="nombre-sitio text-center">
+                Tienda <span class="color">Muebles</span>
+            </h1>
+        </header>
+        <div class="container-nav">
+            <nav class="nav-principal container">
+                <a class="link" href="index.html">Inicio</a>
+                <a class="link" href="nosotros.html">Nosotros</a>
+                <a class="link" href="tienda.html">Tienda</a>
+                <a class="link" href="blog.html">Blog</a>
+                <a class="link" href="galeria.html">Galería</a>
+                <a class="link" href="contacto.html">Contacto</a>
+            </nav>
+        </div>
+
+        <main class="contenido-principal container">
+            <h2 class="text-center"><span class="color">Contacto</span></h2>
+            <form class="formulario">
+                <fieldset>
+                    <legend>Tus Datos</legend>
+                    <div class="campo">
+                        <label for="nonbre">Nombre:</label>
+                        <input type="text" name="nombre" id="nombre" required />
+                    </div>
+                    <div class="campo">
+                        <label for="asunto">Asunto:</label>
+                        <input type="text" name="asunto" id="asunto" required />
+                    </div>
+                    <div class="campo">
+                        <label for="email">E-mail:</label>
+                        <input type="email" name="email" id="email" required />
+                    </div>
+                    <div class="campo">
+                        <label for="mensaje">Teléfono:</label>
+                        <textarea name="mensaje" id="mensaje" rows="10"
+                            cols="20" required></textarea>
+                    </div>
+                </fieldset>
+                <fieldset>
+                    <legend>País</legend>
+                    <div class="campo">
+                        <label for="pais">País:</label>
+                        <select name="pais" id="pais">
+                            <option value disabled>>--Seleccione--<</option>
+                            <option value="mx" selected>México</option>
+                            <option value="es">España</option>
+                            <option value="us">Estados Unidos</option>
+                            <option value="col">Colombia</option>
+                            <option value="arg">Argentina</option>
+                        </select>
+                    </div>
+                </fieldset>
+                <fieldset>
+                    <legend>Información Extra</legend>
+                    <div class="campo">
+                        <label for="cliente">Cliente</label>
+                        <input type="radio" name="tipo" id="cliente" />
+                    </div>
+                    <div class="campo">
+                        <label for="cliente">Proveedor</label>
+                        <input type="radio" name="tipo" id="proveedor" />
+                    </div>
+                    <div class="campo"><label for="categoria">Categoría de
+                            Interés</label>
+                        <input list="categorias" name="categorias">
+                        <datalist id="categorias">
+                            <option value="Cocina"></option>
+                            <option value="Exterior"></option>
+                            <option value="Interior"></option>
+                            <option value="Oficina"></option>
+                            <option value="Jardin"></option>
+                            <option value="Dormitorios"></option>
+                        </datalist>
+                    </div>
+                </fieldset>
+                <input type="submit" value="Enviar Formulario" class="btn">
+            </form>
+        </main>
+
+        <footer class="site-footer">
+            <div class="grid-footer container">
+                <div>
+                    <h3>Categorías</h3>
+                    <nav class="footer-menu">
+                        <a href="#">Oficina</a>
+                        <a href="#">Cocina</a>
+                        <a href="#">Jardin</a>
+                        <a href="#">Cochera</a>
+                        <a href="#">Dormitorios</a>
+                    </nav>
+                </div>
+                <div>
+                    <h3>Sobre Nosotros</h3>
+                    <nav class="footer-menu">
+                        <a href="#">Nuestra Historia</a>
+                        <a href="#">Misión, Visión y Valores</a>
+                        <a href="#">Carreras</a>
+                        <a href="#">Políticas de Privacidad</a>
+                        <a href="#">Terminos del Servicio</a>
+                    </nav>
+                </div>
+                <div>
+                    <h3>Soporte</h3>
+                    <nav class="footer-menu">
+                        <a href="#">FAQ</a>
+                        <a href="#">Ayuda en Línea</a>
+                        <a href="#">Confianza y Seguridad</a>
+                    </nav>
+                </div>
+            </div>
+            <p class="copyright">
+                Todos los derechos reservados.<span class="color">
+                    Mueblería Mamalona</span>
+            </p>
+        </footer>
+    </body>
+
+</html>
