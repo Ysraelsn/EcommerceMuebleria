@@ -52,7 +52,7 @@ a {
   color: #000;
 }
 .container {
-  max-width: 120rem;
+  max-width: 144rem;
   margin: 0 auto;
 }
 
@@ -98,15 +98,27 @@ img {
 .nav-principal {
   margin: 2rem 0;
   display: flex;
-  justify-content: space-evenly; /*Se aplica al elemento parent*/
+  flex-direction: column;
+  align-items: center; /*Se aplica al elemento parent*/
+}
+@media (min-width: 768px) {
+  .nav-principal {
+    justify-content: space-evenly;
+    flex-direction: row;
+  }
 }
 
 .hero {
   background-image: url(../img/principal.jpg);
-  height: 55rem;
+  height: 25rem;
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center center;
+}
+@media (min-width: 768px) {
+  .hero {
+    height: 55rem;
+  }
 }
 
 /** Categorías **/
