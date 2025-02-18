@@ -149,9 +149,6 @@ img {
   border-bottom-right-radius: 1rem;
 }
 
-.listado-categorias {
-}
-
 @media (min-width: 768px) {
   .listado-categorias {
     display: grid;
